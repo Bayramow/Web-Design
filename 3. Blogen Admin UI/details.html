@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+<body>
+
+  <!-------------- Navbar -------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Blogen</a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="posts.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Welcome Brand
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">
+                <i class="fas fa-user-circle"></i> Profile
+              </a>
+              <a class="dropdown-item" href="settings.html">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-------------- Header -------------->
+  <section id="main-header" class="bg-primary text-white py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <i class="fas fa-pencil-alt"></i> Post One
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Actions -------------->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-light text-dark">
+            <i class="fas fa-arrow-left"></i> Back To Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-success text-white">
+            <i class="fas fa-check"></i> Save Changes
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-danger text-white">
+            <i class="fas fa-trash"></i> Delete Post
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Details -------------->
+  <section id="details" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <h4 class="card-header">
+              Edit Post
+            </h4>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input class="form-control" type="text" value="Post One">
+                </div>
+                <div class="form-group">
+                  <label for="category">Category</label>
+                  <select class="form-control">
+                    <option>.....</option>
+                    <option>Web Development</option>
+                    <option>Tech Gadgets</option>
+                    <option>Business</option>
+                    <option>Health & Wellness</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="image">Upload Image</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose File</label>
+                  </div>
+                  <small class="text-muted">Max Size 3mb</small>
+                </div>
+                <div class="form-group">
+                  <label for="body">Body</label>
+                  <textarea name="editor1" class="form-control">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dolores molestiae debitis veritatis? Temporibus totam explicabo soluta reiciendis dolorum quos nostrum expedita ratione sint reprehenderit voluptatum quis ab quo quaerat magnam consectetur error aliquid, molestias fugit similique aut repellendus numquam rem? Suscipit dolor unde temporibus quasi commodi, fugiat a ullam consectetur qui nam quae id cumque perspiciatis provident hic harum aperiam, ratione ea enim at quisquam praesentium! Magni delectus voluptatibus doloremque eum expedita nam vel excepturi officia! Rerum, sit eos iure beatae, iusto asperiores sequi libero blanditiis suscipit repellendus ullam? Alias quis perspiciatis a distinctio vel aperiam minima necessitatibus repellendus!
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Footer -------------->
+  <footer id="main-footer" class="py-5 mt-5 bg-dark text-center text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead">
+            Copyright &copy; <span id="year"></span> Blogen
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- CKEditor cdn -->
+<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+
+  //CKEditor
+  CKEDITOR.replace( 'editor1' );
+
+</script>
+</body>
+</html>

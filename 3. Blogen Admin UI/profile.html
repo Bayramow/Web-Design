@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+<body>
+
+  <!-------------- Navbar -------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Blogen</a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="posts.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Welcome Brand
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">
+                <i class="fas fa-user-circle"></i> Profile
+              </a>
+              <a class="dropdown-item" href="settings.html">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-------------- Header -------------->
+  <section id="main-header" class="bg-primary text-white py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <i class="fas fa-user"></i> Edit Profile
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Actions -------------->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-light text-dark">
+            <i class="fas fa-arrow-left"></i> Back To Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-success text-white">
+            <i class="fas fa-lock"></i> Change Password
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-block bg-danger text-white">
+            <i class="fas fa-trash"></i> Delete Account
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Details -------------->
+  <section id="editProfile" class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <h4 class="card-header">
+              Edit Profile
+            </h4>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input class="form-control" type="text" value="Brad Traversy">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input class="form-control" type="text" value="test@testgmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="bio">Bio</label>
+                  <textarea name="editor1" cols="30" rows="10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, unde, nobis nihil, quo placeat aspernatur illum perferendis asperiores blanditiis eaque nostrum autem atque dolores perspiciatis! Consequatur, tempora nisi iste illum corporis deleniti! Nulla, exercitationem qui provident fugiat dolorem quaerat pariatur reiciendis at voluptatibus omnis ex deleniti id officiis sunt inventore nostrum excepturi tenetur amet corrupti reprehenderit praesentium tempore! Necessitatibus et placeat illum earum repudiandae! Et ut ea voluptate aperiam, consequatur dicta fugit molestiae! Omnis ipsum voluptatum harum illo cumque eum magnam, reiciendis asperiores porro minima non quos impedit? Est, maiores enim! Reiciendis eius dolore quo dolorem! Culpa commodi quas aliquid?
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Your Avatar</h3>
+          <img class="img-fluid d-block mb-3" src="img/avatar.png">
+          <button class="btn btn-primary btn-block" type="button">Edit Image</button>
+          <button class="btn btn-danger btn-block" type="button">Delete Image</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------- Footer -------------->
+  <footer id="main-footer" class="py-5 mt-5 bg-dark text-center text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead">
+            Copyright &copy; <span id="year"></span> Blogen
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- CKEditor cdn -->
+<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+
+  //CKEditor
+  CKEDITOR.replace( 'editor1' );
+
+</script>
+</body>
+</html>
